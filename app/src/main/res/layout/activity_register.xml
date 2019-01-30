@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android" >
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#fff"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        >
+
+        <ImageView
+            android:id="@+id/btn_back"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:src="@drawable/back"
+            android:background="@android:color/transparent"
+            />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/tv_login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Registration"
+        android:textColor="#000000"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        />
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginTop="40dp"
+        android:id="@+id/img_logo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo_2"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <EditText
+            android:id="@+id/ed_nm"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/person"
+            android:background="@drawable/round_edittext"
+            android:hint="Enter Name"
+            android:paddingLeft="10dp"
+            android:textColorHint="#B1B8B9"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textPersonName"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/ed_email"
+            android:textColor="#000"
+            android:drawableLeft="@drawable/email"
+            android:background="@drawable/round_edittext"
+            android:hint="Enter Email"
+            android:textColorHint="#B1B8B9"
+            android:layout_width="match_parent"
+            android:paddingLeft="10dp"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <EditText
+            android:id="@+id/ed_pwd"
+            android:textColor="#000"
+            android:paddingLeft="10dp"
+            android:drawableLeft="@drawable/lock"
+            android:background="@drawable/round_edittext"
+            android:hint="Enter Password"
+            android:textColorHint="#B1B8B9"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/ed_re_pwd"
+            android:textColor="#000"
+            android:background="@drawable/round_edittext"
+            android:drawableLeft="@drawable/lock"
+            android:hint="Re-Type Password"
+            android:textColorHint="#B1B8B9"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:paddingLeft="10dp"
+            android:inputType="textEmailAddress"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+
+        <RadioGroup
+            android:padding="10dp"
+            android:id="@+id/rg_status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+
+
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:id="@+id/rb_com"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Company" />
+
+            <RadioButton
+                android:layout_marginLeft="20dp"
+                android:textColor="#000"
+                android:id="@+id/rb_js"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Job Seeker"
+                />
+
+        </RadioGroup>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <EditText
+            android:id="@+id/ed_no"
+            android:textColor="#000"
+            android:background="@drawable/round_edittext"
+            android:hint="Enter Number"
+            android:drawableLeft="@drawable/contact"
+            android:paddingLeft="10dp"
+            android:textColorHint="#B1B8B9"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:inputType="textEmailAddress"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_marginTop="25dp"
+        android:id="@+id/btn_reg"
+        android:text="Register"
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:textColor="#000"
+        android:background="@drawable/round_button"
+        android:textAllCaps="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        />
+
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:id="@+id/btn_log"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center"
+        android:textColor="#000"
+        android:textAllCaps="false"
+        android:text="Have an Account ??"
+        />
+
+
+
+</LinearLayout>
+
+</ScrollView>

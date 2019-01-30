@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:background="#fff"
+        android:elevation="3dp"
+        card_view:cardCornerRadius="0dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:background="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/img_cat"
+                android:layout_width="110dp"
+                android:layout_height="115dp"
+                android:clickable="true"
+                android:layout_marginRight="10dp"
+                android:src="@drawable/octopus_logo"
+                android:scaleType="fitXY" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+
+                <TextView
+                    android:id="@+id/tv_com_nm"
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:paddingTop="10dp"
+                    android:textColor="#000"
+                    android:textSize="15dp"
+                    android:text="Rajeshwar Software Solutions"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_email"
+                    android:layout_width="match_parent"
+                    android:layout_height="25dp"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:paddingRight="10dp"
+                    android:textSize="12dp"
+                    android:text="rajeshwar@gmail.com"
+                    />
+
+                <TextView
+                    android:layout_marginTop="5dp"
+                    android:id="@+id/tv_mobile"
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:textColor="#000"
+                    android:paddingRight="10dp"
+                    android:textSize="12dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:text="+91 8140322987"
+                    />
+
+                <TextView
+                    android:paddingBottom="5dp"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:layout_marginTop="5dp"
+                    android:textColor="#000"
+                    android:id="@+id/tv_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:textSize="12dp"
+                    android:text="Amardip Complex , Rajkot."
+                    />
+
+            </LinearLayout>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Product : "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:orientation="horizontal"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gallery : "
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:textColor="@color/colorPrimaryDark"
+        />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>
+</ScrollView>
